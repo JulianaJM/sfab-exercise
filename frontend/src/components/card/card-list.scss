@@ -1,0 +1,52 @@
+.card-grid {
+  width: 100%;
+  padding: 15px 10px 0;
+}
+
+.is-shifted {
+  height: 100vh;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.card--wrapper {
+  display: flex;
+  // margin-top: 80px;
+  position: relative;
+  top: 80px;
+
+  // Select all child elements recursively
+  & > * {
+    flex: 1;
+  }
+}
+
+.loadMore {
+  width: 200px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #1caada;
+  transition: 0.3s;
+}
+.loadMore:hover {
+  color: #1caada;
+  background-color: #fff;
+  border: 1px solid #1caada;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card--wrapper {
+    //margin-top: 0;
+    top: 0;
+    height: auto;
+  }
+
+  .card-grid {
+    height: auto;
+  }
+}

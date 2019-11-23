@@ -1,0 +1,32 @@
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #1caada;
+  width: 120px;
+  height: 120px;
+  flex: none !important;
+  margin: 20% auto;
+  animation: spin 2s linear infinite;
+}
+
+.next {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .loader {
+    width: 70px;
+    height: 70px;
+  }
+}

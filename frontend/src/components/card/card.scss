@@ -1,0 +1,84 @@
+.card {
+  float: left;
+  position: relative;
+
+  .image--basic {
+    padding: 0 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &.open {
+      box-shadow: 0 0 10px #1caada;
+      transition: all 0.5s ease;
+    }
+
+    .basic__img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .image--info {
+      margin-top: 5px;
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+
+      .title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.card-open {
+  box-shadow: 0 0 10px #1caada;
+  transition: all 0.5s ease;
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: 50%;
+  }
+
+  .card:nth-of-type(2n + 2) .image--expand {
+    margin-left: -100%;
+  }
+
+  .card:nth-of-type(2n + 3) {
+    clear: left;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .card {
+    width: 25%;
+  }
+
+  .card:nth-of-type(4n + 2) .image--expand {
+    margin-left: -100%;
+  }
+
+  .card:nth-of-type(4n + 3) .image--expand {
+    margin-left: -200%;
+  }
+
+  .card:nth-of-type(4n + 4) .image--expand {
+    margin-left: -300%;
+  }
+
+  .card:nth-of-type(4n + 5) {
+    clear: left;
+  }
+}
