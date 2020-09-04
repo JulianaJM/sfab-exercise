@@ -7,7 +7,7 @@
     "classnames": "^2.2.6",
     "is-mobile": "^2.1.0",
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.8.6",
